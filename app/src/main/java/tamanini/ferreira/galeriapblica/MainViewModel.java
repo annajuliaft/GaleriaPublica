@@ -16,10 +16,6 @@ import kotlinx.coroutines.CoroutineScope;
 public class MainViewModel extends AndroidViewModel {
     int navigationOpSelected = R.id.gridViewOp;
 
-    public MainViewModel(@NonNull Application application) {
-        super(application);
-    }
-
     public int getNavigationOpSelected() {
         return navigationOpSelected;
     }
@@ -29,6 +25,7 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     LiveData<PagingData<ImageData>> pageLv;
+
     public MainViewModel(@NonNull Application application) {
         super(application);
         GalleryRepository galleryRepository = new GalleryRepository(application);
