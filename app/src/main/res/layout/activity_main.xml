@@ -18,9 +18,13 @@
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/btNav"
+        style="@style/Widget.MaterialComponents.BottomNavigationView.PrimarySurface"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/white"
+        app:itemBackground="@color/white"
+        app:itemIconTint="@color/design_default_color_background"
+        app:itemTextColor="@color/design_default_color_background"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
